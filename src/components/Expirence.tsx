@@ -1,6 +1,16 @@
+import Image from 'next/image'
+
 export default function Expirence() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-row gap-4">
+      <Image
+        src="/coamo.jpeg"
+        alt="Coamo"
+        width={200}
+        height={200}
+        className="rounded-md"
+      />
+
       <div className="flex flex-col gap-2">
         <h4>COAMO AGROINDUSTRIAL COOPERATIVA</h4>
         <h5>Senior Software Engineer ReactJS | React-native | NodeJS</h5>
