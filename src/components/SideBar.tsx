@@ -1,6 +1,7 @@
 import AcademicEducation from './AcademicEducation'
 import Avatar from './Avatar'
 import Contacts from './Contacts'
+import Links from './Links'
 import Skills from './Skills'
 
 export default function SideBar() {
@@ -10,6 +11,7 @@ export default function SideBar() {
       <Contacts />
       <Skills />
       <AcademicEducation />
+      <Links />
     </aside>
   )
 }
