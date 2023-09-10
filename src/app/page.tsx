@@ -3,9 +3,15 @@
 import { useSession } from 'next-auth/react'
 import ButtonLinkedin from '../components/ButtonLinkedin'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const { data: session } = useSession()
+  const route = useRouter()
+
+  const handleRedirect = () => {
+    route.push('/portfolio')
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 p-24">
@@ -26,7 +32,7 @@ export default function Home() {
             Welcome {session?.user?.name}
           </p>
         ) : (
-          <ButtonLinkedin />
+          <ButtonLinkedin onClick={handleRedirect} />
         )}
       </div>
     </main>
