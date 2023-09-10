@@ -8,7 +8,7 @@ type Props = {
   image: string
 }
 
-export default function Expirence({
+export default function Expirencies({
   title,
   description,
   date,

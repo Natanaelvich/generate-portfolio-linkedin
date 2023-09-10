@@ -1,5 +1,5 @@
 import About from '@/components/About'
-import Expirence from '@/components/Expirence'
+import Expirencies from '@/components/Expirencies'
 import SideBar from '@/components/SideBar'
 
 export default function Portfolio() {
@@ -17,7 +17,7 @@ export default function Portfolio() {
             </h2>
             <ul className="flex flex-col gap-2">
               <li>
-                <Expirence
+                <Expirencies
                   title="Coamo Agroindustrial Cooperativa"
                   description="Senior Software Engineer ReactJS | React-native | NodeJS"
                   date="julho de 2022 - Present (1 ano 3 meses)"
@@ -26,7 +26,7 @@ export default function Portfolio() {
                 />
               </li>
               <li>
-                <Expirence
+                <Expirencies
                   title="Control Tracker"
                   description="FreeLancer Frontend Developer React Native at CTracker"
                   date="novembro de 2020 - julho de 2023 (2 anos 9 meses)"
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 />
               </li>
               <li>
-                <Expirence
+                <Expirencies
                   title="BNE - Banco Nacional de Empregos"
                   description="Frontend developer ReactJS | React Native at BNE - Banco Nacional de Empregos"
                   date="abril de 2021 - março de 2023 (2 anos)"
@@ -44,7 +44,7 @@ export default function Portfolio() {
                 />
               </li>
               <li>
-                <Expirence
+                <Expirencies
                   title="Ideia Soluções em Sistemas"
                   description="Full Stack developer | React, React Native and PHP at empresa Ideia Tecnologia."
                   date="junho de 2020 - fevereiro de 2022 (1 ano 9 meses)"
