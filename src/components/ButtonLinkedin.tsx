@@ -1,6 +1,13 @@
-export default function ButtonLinkedin() {
+import { ButtonHTMLAttributes } from 'react'
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+
+export default function ButtonLinkedin(props: ButtonProps) {
   return (
-    <button className="flex items-center gap-2 bg-white hover:bg-gray-100 border-blue-500 border text-blue-500 font-bold py-2 px-4 rounded">
+    <button
+      className="flex items-center gap-2 bg-white hover:bg-gray-100 border-blue-500 border text-blue-500 font-bold py-2 px-4 rounded"
+      {...props}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
