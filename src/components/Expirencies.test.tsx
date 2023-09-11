@@ -10,7 +10,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('title')).toBeInTheDocument()
@@ -23,7 +23,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('description')).toBeInTheDocument()
@@ -36,7 +36,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('date')).toBeInTheDocument()
@@ -49,7 +49,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('resume')).toBeInTheDocument()
@@ -62,7 +62,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toBeInTheDocument()
@@ -75,7 +75,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toHaveAttribute('src', 'image')
@@ -88,7 +88,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toHaveAttribute('alt', 'title')
@@ -101,7 +101,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toHaveAttribute('width', '200')
@@ -114,7 +114,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toHaveAttribute('height', '200')
@@ -127,7 +127,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByRole('img')).toHaveClass('rounded-md')
@@ -140,7 +140,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('title')).toHaveClass('text-2xl')
@@ -153,7 +153,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('description')).toHaveClass('text-xl')
@@ -166,7 +166,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('date')).toHaveClass('text-lg')
@@ -179,7 +179,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
     expect(screen.getByText('resume')).toHaveClass('text-base')
@@ -192,7 +192,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
 
@@ -208,7 +208,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
 
@@ -224,7 +224,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
 
@@ -240,7 +240,7 @@ describe('Expirencies', () => {
         description="description"
         date="date"
         resume="resume"
-        image="image"
+        image="/bne"
       />,
     )
 
