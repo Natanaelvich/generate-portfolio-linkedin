@@ -4,6 +4,9 @@
 
 This project is a simple application to generate a portfolio based on your Linkedin profile.
 
+![image](https://github.com/Natanaelvich/generate-portfolio-linkedin/assets/52014318/f497e07e-00ec-4bf8-83b1-4561f013b83c)
+
+
 ## Technologies
 
 - Nextjs
