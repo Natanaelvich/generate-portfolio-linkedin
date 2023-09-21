@@ -9,13 +9,13 @@ export default function Portfolio() {
         <SideBar />
 
         <div>
-          <section>
+          <section className="pt-6">
             <About />
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-6">
+            <h2 className="text-2xl font-bold text-gray-900 mt-6 mb-4">
               Expirences
             </h2>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-6">
               <li>
                 <Expirencies
                   title="Coamo Agroindustrial Cooperativa"
@@ -30,7 +30,7 @@ export default function Portfolio() {
                   title="Control Tracker"
                   description="FreeLancer Frontend Developer React Native at CTracker"
                   date="novembro de 2020 - julho de 2023 (2 anos 9 meses)"
-                  image="/controltracker.jpeg"
+                  image="/controltracker.png"
                   resume="Na CTracker, trabalhei no desenvolvimento de aplicações voltadas para o gerenciamento e rastreamento de veículos. Essas soluções eram destinadas a uma variedade de usuários, desde motoristas comuns até frotistas. Utilizando o React Native, participei ativamente da criação de aplicativos que proporcionaram aos usuários uma ferramenta eficiente e intuitiva para gerenciar e rastrear seus veículos. Este projeto demonstrou minha habilidade para desenvolver soluções personalizadas que atendem às necessidades específicas de diferentes públicos."
                 />
               </li>
