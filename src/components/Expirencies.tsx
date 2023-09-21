@@ -16,13 +16,13 @@ export default function Expirencies({
   resume,
 }: Props) {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-4 items-start">
       <Image
         src={image}
         alt={title}
-        width={200}
-        height={200}
-        className="rounded-md"
+        width={100}
+        height={100}
+        className="rounded-md aspect-square"
       />
 
       <div className="flex flex-col gap-2">
