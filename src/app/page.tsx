@@ -3,11 +3,9 @@
 import { signIn, useSession } from 'next-auth/react'
 import ButtonLinkedin from '../components/ButtonLinkedin'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const { data: session } = useSession()
-  const route = useRouter()
 
   const handleSignIn = () => {
     signIn()
