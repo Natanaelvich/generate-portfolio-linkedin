@@ -7,21 +7,18 @@ export const authOptions: AuthOptions = {
       clientId: process.env.LINKEDIN_ID as string,
       clientSecret: process.env.LINKEDIN_SECRET as string,
       authorization: {
-        params: {
-          scope: 'openid profile email',
-        },
+        params: { scope: 'openid profile email' },
       },
-      userinfo: {
-        url: 'https://api.linkedin.com/v2/userinfo',
-      },
-      async profile(profile, tokens) {
-        console.log({
-          profile,
-          tokens,
-        })
-
+      issuer: 'https://www.linkedin.com',
+      jwks_endpoint: 'https://www.linkedin.com/oauth/openid/jwks',
+      profile(profile, tokens) {
+        const defaultImage =
+          'https://cdn-icons-png.flaticon.com/512/174/174857.png'
         return {
-          ...profile,
+          id: profile.sub,
+          name: profile.name,
+          email: profile.email,
+          image: profile.picture ?? defaultImage,
         }
       },
     }),
