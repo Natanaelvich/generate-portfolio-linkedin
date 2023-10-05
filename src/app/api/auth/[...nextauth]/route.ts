@@ -8,29 +8,19 @@ export const authOptions: AuthOptions = {
       clientSecret: process.env.LINKEDIN_SECRET as string,
       authorization: {
         url: 'https://www.linkedin.com/oauth/v2/authorization',
-        params: { scope: 'r_basicprofile' },
+        params: { scope: 'profile email' },
       },
     }),
+
     // ...add more providers here
   ],
 
   callbacks: {
-    async signIn({ user, account, profile, email, credentials }) {
+    async signIn(data) {
       console.log({
-        user,
-        account,
-        profile,
-        email,
-        credentials,
+        data,
       })
       return true
-    },
-    async redirect({ url, baseUrl }) {
-      console.log({
-        url,
-        baseUrl,
-      })
-      return baseUrl
     },
     async session({ session, user, token }) {
       console.log({
