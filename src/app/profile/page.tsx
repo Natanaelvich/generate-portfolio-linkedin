@@ -1,9 +1,12 @@
 'use client'
 
+import ButtonGeneratePortifolio from '@/components/ButtonGeneratePortifolio'
 import { signOut, useSession } from 'next-auth/react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const Profile = () => {
+  const route = useRouter()
   const { data: session } = useSession()
 
   const handleSignOut = async () => {
@@ -12,6 +15,10 @@ const Profile = () => {
 
   if (!session?.user) {
     return null
+  }
+
+  const handleGeneratePortifolio = () => {
+    route.push('/portfolio')
   }
 
   return (
@@ -32,6 +39,8 @@ const Profile = () => {
 
       {/* email */}
       <p className="text-center text-gray-700">{session?.user?.email}</p>
+
+      <ButtonGeneratePortifolio onClick={handleGeneratePortifolio} />
 
       {/* logout */}
       <button
