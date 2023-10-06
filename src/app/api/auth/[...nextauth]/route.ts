@@ -11,7 +11,7 @@ export const authOptions: AuthOptions = {
       },
       issuer: 'https://www.linkedin.com',
       jwks_endpoint: 'https://www.linkedin.com/oauth/openid/jwks',
-      profile(profile, tokens) {
+      profile(profile) {
         const defaultImage =
           'https://cdn-icons-png.flaticon.com/512/174/174857.png'
         return {
