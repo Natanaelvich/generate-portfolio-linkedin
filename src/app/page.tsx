@@ -8,7 +8,9 @@ export default function Home() {
   const { data: session } = useSession()
 
   const handleSignIn = () => {
-    signIn()
+    signIn('linkedin', {
+      callbackUrl: '/profile',
+    })
   }
 
   return (
