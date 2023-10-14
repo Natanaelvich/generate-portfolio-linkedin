@@ -5,12 +5,15 @@ import ButtonLinkedin from '../components/ButtonLinkedin'
 import Image from 'next/image'
 
 export default function Home() {
-  const { data: session } = useSession()
+  const { data: session, status } = useSession()
 
   const handleSignIn = () => {
     signIn('linkedin', {
       callbackUrl: '/profile',
     })
+  }
+  if (status === 'loading') {
+    return null
   }
 
   return (
