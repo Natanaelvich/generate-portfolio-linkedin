@@ -3,8 +3,11 @@
 import { signIn, useSession } from 'next-auth/react'
 import ButtonLinkedin from '../components/ButtonLinkedin'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
 export default function Home() {
+  const router = useRouter()
   const { data: session, status } = useSession()
 
   const handleSignIn = () => {
@@ -12,6 +15,13 @@ export default function Home() {
       callbackUrl: '/profile',
     })
   }
+
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.push('/profile')
+    }
+  }, [router, status])
+
   if (status === 'loading') {
     return null
   }
