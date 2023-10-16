@@ -13,6 +13,7 @@ This project is a simple application to generate a portfolio based on your Linke
 - Nextjs
 - Typescript
 - NextAuth
+- Linkedin API
 
 ## License
 
